@@ -16,6 +16,8 @@ app.use(logParams);
 
 app.use(`/`, routes);
 
+// app.use(express.static('./templates/'));
+
 app.use( (req, res, next) => {
   let err = new Error('Not Found, dummy');
   err.status = 404;

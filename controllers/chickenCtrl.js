@@ -1,13 +1,7 @@
 "use strict";
-
-// let express = require('express');
-const { readFile } = require('fs');
+const { join } = require('path');
+const { sendFile } = require('fs');
 
 module.exports.seeChickens = (req, res, next) => {
-	readFile('../templates/see-our-chickens.html', (err, data) => {
-		if(err) {
-			next(err);
-		}
-		res.send(data);
-	});
+	res.sendFile(join(__dirname, "../templates/see-our-chickens.html"));
 };
