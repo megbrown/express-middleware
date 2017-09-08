@@ -6,8 +6,15 @@ require('dotenv').config();
 
 let routes = require('./routes/');
 
+const logParams = (req, res, next) => {
+  console.log('req.params', req.params );
+  console.log('req.url from "logParams"', req.url );
+  next();
+};
+
 app.use(logParams);
-app.use(`/api/v1/`, routes);
+
+app.use(`/`, routes);
 
 app.use( (req, res, next) => {
   let err = new Error('Not Found, dummy');
