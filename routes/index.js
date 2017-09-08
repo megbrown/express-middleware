@@ -4,7 +4,7 @@ const { Router } = require('express');
 const router = Router();
 
 router.use(require('./see-our-chickens'));
-// router.use(require('./see-our-eggs'));
+router.use(require('./see-our-eggs'));
 
 router.get('/', (req, res) => {
   res.json({
