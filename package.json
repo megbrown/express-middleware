@@ -1,0 +1,24 @@
+{
+  "name": "21-express-middleware",
+  "version": "1.0.0",
+  "description": "## Exercise: In-App Easter Egg 1. Create a simple express app that includes the following routes:   - /home   - /see-our-chickens   - /see-our-eggs",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/megbrown/express-middleware.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/megbrown/express-middleware/issues"
+  },
+  "homepage": "https://github.com/megbrown/express-middleware#readme",
+  "dependencies": {
+    "dotenv": "^4.0.0",
+    "express": "^4.15.4"
+  }
+}
